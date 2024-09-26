@@ -74,3 +74,6 @@ completed the first streatch challenge but not the second if you have time compl
 
 for Part 4:
 completed all but final streatch challenge continue to move onto part 5.
+
+for part 7:
+part 6 was completed but I am still running into an error with displaying the code: check the react and redux library to see if they were installed properly and go ahead and push to getting the zxcvbn library together. 
