@@ -20,10 +20,10 @@ function Password() {
   const [password, setPassword] = useState('p@$$wrd');
 
   return (
-    <div>
-      <div>{password}</div> 
+    <div className="password-container">
+      <div className="password-display">{password}</div>
       <div>
-        <button onClick={() => {
+        <button className="generate-btn" onClick={() => {
           const newPassword = generatePassword(); // Generate a new password
           setPassword(newPassword); // Update the state with the new password
         }}>Generate</button>
