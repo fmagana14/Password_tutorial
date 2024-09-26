@@ -71,3 +71,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 for Part 3: 9/25/24
 completed the first streatch challenge but not the second if you have time complete it. 
+
+for Part 4:
+completed all but final streatch challenge continue to move onto part 5.
