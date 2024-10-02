@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useDispatch } from 'react-redux';  // Import useDispatch
 import { addPassword } from './features/passwords/passwordsSlice'; 
-
+import zxcvbn from 'zxcvbn';
 
 function generatePassword(length) {
   const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
@@ -24,6 +24,7 @@ function Password() {
   const [password, setPassword] = useState('p@$$w0rd');  // Initial password value
   const [name, setName] = useState('My Password');       // New state for the password description/name
   const [length, setLength] = useState(9);               // State for dynamic password length
+  console.log(zxcvbn(password))
 
   return (
     <div className="password-container">
@@ -33,7 +34,7 @@ function Password() {
       <div>
         <input 
           type="text" 
-          value={password} 
+          value={password}
           onChange={(e) => setPassword(e.target.value)} 
           placeholder="Generated password" 
         />
